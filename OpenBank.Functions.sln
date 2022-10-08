@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenBank.Functions", "OpenBank.Functions\OpenBank.Functions.csproj", "{DF635B76-A4D0-4FD6-92A1-608672A60892}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenBank.Domain", "OpenBank.Domain\OpenBank.Domain.csproj", "{87125D56-2141-48B7-A27F-7E22BEF1CC43}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenBank.Tests", "OpenBank.Tests\OpenBank.Tests.csproj", "{C9E7D9A3-B0F0-46FE-863F-7A71BD894C12}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenBank.Plaid", "OpenBank.Plaid\OpenBank.Plaid.csproj", "{9B0FD2D1-9470-410E-A64B-1C907B08D179}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DF635B76-A4D0-4FD6-92A1-608672A60892}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF635B76-A4D0-4FD6-92A1-608672A60892}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF635B76-A4D0-4FD6-92A1-608672A60892}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF635B76-A4D0-4FD6-92A1-608672A60892}.Release|Any CPU.Build.0 = Release|Any CPU
+		{87125D56-2141-48B7-A27F-7E22BEF1CC43}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87125D56-2141-48B7-A27F-7E22BEF1CC43}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87125D56-2141-48B7-A27F-7E22BEF1CC43}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87125D56-2141-48B7-A27F-7E22BEF1CC43}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C9E7D9A3-B0F0-46FE-863F-7A71BD894C12}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9E7D9A3-B0F0-46FE-863F-7A71BD894C12}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9E7D9A3-B0F0-46FE-863F-7A71BD894C12}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9E7D9A3-B0F0-46FE-863F-7A71BD894C12}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B0FD2D1-9470-410E-A64B-1C907B08D179}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B0FD2D1-9470-410E-A64B-1C907B08D179}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B0FD2D1-9470-410E-A64B-1C907B08D179}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B0FD2D1-9470-410E-A64B-1C907B08D179}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
