@@ -4,6 +4,8 @@ namespace OpenBank.Domain.Interfaces.Services
 {
     public interface ITokenService : IBaseOpenBankProvider
     {
-       Task<IRequestToken?> GetTempToken();
+        Task<IRequestToken?> RequestTokenAsync(Guid userId);
+        
+        Task<IToken> ExchangeTokenAsync(string token);
     }
 }

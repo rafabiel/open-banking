@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Http;
 using Newtonsoft.Json;
 
-namespace OpenBank.Domain
+namespace OpenBank.Domain.Utils
 {
     public static class HttpUtils
     {
@@ -15,10 +15,11 @@ namespace OpenBank.Domain
         public static async Task<T> GetBodyAsync<T>(this HttpRequest httpRequest)
         {
             var bodyString = string.Empty;
-
+        
             try
             {
                 using var stream = new StreamReader(httpRequest.Body);
+                
                 bodyString = await stream.ReadToEndAsync();
                 
                 return JsonConvert.DeserializeObject<T>(bodyString) ?? throw new ArgumentException("Body is null");

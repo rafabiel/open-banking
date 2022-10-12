@@ -4,7 +4,7 @@ namespace OpenBank.Domain.Interfaces.Models
     { 
         DateTime Expiration { get; }
         
-        string LinkToken { get; }
+        string Token { get; }
         
         string RequestId { get; }
     }

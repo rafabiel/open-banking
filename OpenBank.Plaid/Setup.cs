@@ -18,7 +18,6 @@ namespace OpenBank.Plaid
             var services = builder.Services;
             
             services.Configure<PlaidConfig>(configuration.GetSection("Providers:Plaid:Config"));
-            services.Configure<BasePlaidRequest>(configuration.GetSection("Providers:Plaid:Credentials"));
 
             services.AddRefitClient<IPlaidApi>(new RefitSettings
                 {
@@ -31,7 +30,7 @@ namespace OpenBank.Plaid
                 })
                 .ConfigureHttpClient(c =>
                     {
-                        c.BaseAddress = new Uri($"https://{configuration["Providers:Plaid:Credentials:Environment"]}.plaid.com");
+                        c.BaseAddress = new Uri($"https://{configuration["Providers:Plaid:Config:Environment"]}.plaid.com");
                         c.DefaultRequestHeaders.Add("Plaid-Version", "2020-09-14");
                     }
                 );

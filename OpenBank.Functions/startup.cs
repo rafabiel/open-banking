@@ -1,8 +1,8 @@
-
-
 using System.IO;
+using System.Reflection;
 using Microsoft.Azure.Functions.Extensions.DependencyInjection;
 using Microsoft.Extensions.Configuration;
+using OpenBank.Domain;
 using OpenBank.Functions;
 using OpenBank.Plaid;
 
@@ -19,6 +19,7 @@ namespace OpenBank.Functions
                 .AddEnvironmentVariables()
                 .Build();
 
+            builder.AddDomain(config);
             builder.AddPlaid(config);
         }
     }

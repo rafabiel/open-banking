@@ -5,6 +5,10 @@
         "FUNCTIONS_WORKER_RUNTIME": "dotnet"
     },
     
+    "Host": {
+        "CORS": "*"
+    },
+    
     "Providers": {
         "Plaid": {
             "Type": 0,
@@ -23,9 +27,7 @@
                 ],
                 "Filters": [
                     "checking"
-                ]
-            },
-            "Credentials": {
+                ],
                 "Environment": "sandbox",
                 "ClientId": "",
                 "ClientSecret": "",

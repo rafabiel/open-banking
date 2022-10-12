@@ -7,13 +7,13 @@ namespace OpenBank.Domain.Responses
         public RequestTokenResponse(DateTime expiration, string linkToken, string requestId)
         {
             Expiration = expiration;
-            LinkToken = linkToken;
+            Token = linkToken;
             RequestId = requestId;
         }
 
         public DateTime Expiration { get; }
         
-        public string LinkToken { get; }
+        public string Token { get; }
         
         public string RequestId { get; }
     }

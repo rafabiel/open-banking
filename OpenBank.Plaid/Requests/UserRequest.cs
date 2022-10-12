@@ -7,6 +7,7 @@ namespace OpenBank.Plaid.Requests
         public UserRequest(Guid clientUserId)
             => ClientUserId = clientUserId;
         
+        [JsonProperty("client_user_id")]
         public Guid ClientUserId { get; set; }
     }
 }
